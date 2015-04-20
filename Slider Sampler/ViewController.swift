@@ -26,8 +26,17 @@ class ViewController: UIViewController {
         label.text = "Slider = \(sliderValue)"
     }
     
+    @IBAction func toggle(sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            label.text = "Private Selected"
+        } else {
+            label.text = "Public Selected"
+        }
+    }
     
     @IBOutlet weak var label: UILabel!
+    
+    
     
 
 }

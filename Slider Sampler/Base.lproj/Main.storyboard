@@ -28,6 +28,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lLM-U1-Iuo">
+                                <rect key="frame" x="81" y="359" width="159" height="29"/>
+                                <segments>
+                                    <segment title="Private"/>
+                                    <segment title="Public"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggle:" destination="vXZ-lx-hvc" eventType="valueChanged" id="8ER-dX-pRG"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.34964222293067981" green="1" blue="0.30254916756653216" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
